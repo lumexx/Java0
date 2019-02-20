@@ -3,12 +3,14 @@ package com.company;
 import java.util.Scanner;
 
 public class Task4 {
+
     public static void main(String args[]) {
+        int leftBorder, rightBorder;
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter Left Border: ");
-        int leftBorder = scan.nextInt();
+        leftBorder = scan.nextInt();
         System.out.print("Enter Right Border: ");
-        int rightBorder = scan.nextInt();
+        rightBorder = scan.nextInt();
         findAmicable(leftBorder, rightBorder);
     }
 

@@ -2,9 +2,8 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Seventh {
-    public static void main(String args[])
-    {
+public class Task7 {
+    public static void main(String args[]) {
         int x, y;
         System.out.println("Enter x and y");
         Scanner scan = new Scanner(System.in);

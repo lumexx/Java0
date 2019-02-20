@@ -2,20 +2,17 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Fifth
-{
-    public static void main(String[] args)
-    {
+public class Task5 {
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter N:");
-        int n = scan.nextInt();
+        System.out.println("Enter Number:");
+        int number = scan.nextInt();
         int sum = 0;
         int multi = 1;
-        for (int i = 0; i < 6; i++)
-        {
-            sum += n % 10;
-            multi *= n % 10;
-            n /= 10;
+        for (int i = 0; i < 6; i++) {
+            sum += number % 10;
+            multi *= number % 10;
+            number /= 10;
         }
         double arithmetic = (double) sum / 6;
         double geometric = Math.pow(multi, (double) 1 / 6);

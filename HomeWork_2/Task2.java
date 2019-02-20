@@ -14,8 +14,7 @@ public class Task2 {
         System.out.println("Number Largest Digit: " + findLargestDigit(number));
         System.out.println((isPalindrome(number)) ? "Number Is Palindrome" : "Number Is Not Palindrome");
         System.out.println((isPrime(number)) ? "Number Is Prime" : "Number Is Not Prime");
-        System.out.println("Number Prime Divisors: ");
-        findPrimeDivisors(number);
+        System.out.println("Number Prime Divisors: "); printPrimeDivisors(number);
         System.out.println("Numbers LCM: " + findLCM(number, number2));
         System.out.println("Numbers GCD: " + findGCD(number, number2));
         System.out.println("Number Digits Amount: " + findDigitsCount(number));
@@ -45,7 +44,8 @@ public class Task2 {
     private static boolean isPrime(int number) {
         if (number <= 1) {
             return false;
-        } else {
+        }
+        else {
             int divisor = 2;
             while (divisor <= number / 2) {
                 if (number % divisor == 0) {
@@ -57,7 +57,7 @@ public class Task2 {
         }
     }
 
-    private static void findPrimeDivisors(int number) {
+    private static void printPrimeDivisors(int number) {
         boolean isHavingDivisors = false;
         for (int i = 1; i <= number; i++) {
             if (number % i == 0) {
@@ -79,8 +79,9 @@ public class Task2 {
     private static int findGCD(int number, int number2) {
         int gcd = 1;
         for (int i = 1; i <= number && i <= number2; i++) {
-            if (number % i == 0 && number2 % i == 0)
+            if (number % i == 0 && number2 % i == 0) {
                 gcd = i;
+            }
         }
         return gcd;
     }
