@@ -17,7 +17,7 @@ public class Task2 {
         System.out.println("Number Prime Divisors: "); printPrimeDivisors(number);
         System.out.println("Numbers LCM: " + findLCM(number, number2));
         System.out.println("Numbers GCD: " + findGCD(number, number2));
-        System.out.println("Number Digits Amount: " + findDigitsCount(number));
+        System.out.println("Number Digits Amount: " + findUniqueDigitsCount(number));
     }
 
     private static int findLargestDigit(int number) {
@@ -86,11 +86,13 @@ public class Task2 {
         return gcd;
     }
 
-    private static int findDigitsCount(int number) {
+    private static int findUniqueDigitsCount(int number) {
         int count = 0;
-        while (number != 0) {
-            number = number / 10;
-            count++;
+        String string = Integer.toString(number);
+        for (int i = 0; i < 10; i++) {
+            if (string.contains(String.valueOf(i))) {
+                count++;
+            }
         }
         return count;
     }
