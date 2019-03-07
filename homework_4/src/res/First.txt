@@ -1,0 +1,5 @@
+Avicii,EDM,360,44000
+Eminem,Rap,160,44000
+Moby,Techno,440,44000
+Drake,Rap,560,44000
+Martin Garrix,EDM,460,44000
